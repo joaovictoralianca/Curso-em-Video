@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Se a tela tiver entre 750px e 1050px ela vai carregar a foto-m.png se a tela do usuario tiver menos que 750px ela ira carregar a imagem foto-p.png-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Se a tela tiver 1050px ou mais que isso ela vai carregar a foto-g.png se a tela do usuario tiver menos que 1050px ela ira carregar a imagem foto-m.png-->
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/somrelax.mp3" controls autoplay></audio> - O controls adiciona controles de áudio, como reprodução, pausa e volume, é necessário sempre que for utilizar áudio.-->
+
+    <!--Formatos para poder adicionar MP3, WAV, OGG para ter possibilidade de ser aceito na maioria dos navegadores-->
+
+      <!--Colocando audio com source com outros formatos-->
+    <audio preload="metadata" autoplay controls loop> <!--metadata vai carregar algumas informacões do arquivo, none carrega nada, e auto carrega tudo, e por fim o loop inicia o áudio novamente.-->
+        <source src="midia/somrelax.mp" type="audio/mpeg">
+        <source src="midia/somrelax.og" type="audio/ogg">
+        <source src="midia/somrelax.wa" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/somrelax.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!--Caso não seja aceito nenhum dos formatos acima.-->
+    </audio>
+    
+
+
+</body>
+</html>

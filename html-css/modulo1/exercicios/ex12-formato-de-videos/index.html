@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>   
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--
+                    <video src="midia/limao-webm.webm" width="500px" controls></video>
+    -->
+
+    <video width="500px" poster="imagens/limao-capa.jpg" controls> <!--poster=""imagem como capa, controls informacões pause, volume, minutos e tela cheia. autoplay junto do muted, autoplay video inicia assim que entrar na página o muted é para ele começar o video no mudo se não o autoplay não fuciona-->
+          <source src="midia/limao-mp4.mp4" type="video/mp4">
+          <source src="midia/limao-m4v.m4v" type="video/mp4">
+          <source src="midia/limao-webm.webm" type="video/webm">
+          <source src="midia/limao-ogv.ogv" type="video/ogg">
+          <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <!-- Inserindo vídeos de outros sites-->
+
+    <iframe width="560" 
+
+    height="315" 
+
+    src="https://www.youtube.com/embed/FdE5G95B7Mg"
+
+    title="YouTube video player"
+
+    frameborder="0" 
+
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+    allowfullscreen></iframe>
+
+    <h1>Inserindo vídoes do Vimeo</h1>
+    <!--Podemos colocar algumas descricões a mais utilizando video do vimeo, porém se torna um pouco mais lento.-->
+
+    <iframe src="https://player.vimeo.com/video/153187817?h=0ee6612d2f&autoplay=1&color=ff9933" 
+
+    width="560" height="315" 
+
+    frameborder="0" 
+
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<!--frameborder="0" determina se haverá borda ou não.
+allowfullscreen adiciona um botão de tela inteira.
+aloow-->
+    <p>
+       <a href="https://vimeo.com/153187817">
+          2016 Animation Reel
+       </a> 
+    from 
+       <a href="https://vimeo.com/jacksonread">
+         jackson read
+       </a> 
+    on 
+       <a href="https://vimeo.com">     
+         Vimeo
+       </a>.
+    </p>
+    <p>
+          My current animation reel as of March 2016.
+    </p>
+
+    
+</body>
+</html>
