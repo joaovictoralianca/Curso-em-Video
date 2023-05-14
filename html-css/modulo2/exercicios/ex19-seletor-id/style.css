@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
- em HTML é id    = em CSS é #
- em HTML é class = em CSS é .
+ em HTML é id    = em CSS é # (só pode um elemento)
+ em HTML é class = em CSS é . (pode vários elementos)
 */
 body{
                     background-color: darkseagreen;
@@ -15,10 +15,33 @@ h1{
 #principal{
                     text-align: center;
                     background-color: rgb(4, 109, 0);
-                    color: white;
                     
+                    
+}
+.principal{
+                    color: chocolate;/*Sobrepondo a cor do h1 com class="principal"*/
 }
 
 h2{
                     color: rgb(51, 77, 49);
 }
+.basico{
+      color: #3c80e3;
+}
+.intermediario{
+      color: #80793c;
+}
+.avancado{
+      color:#803c3c;
+}
+.destaque{
+                    background-color:yellow;
+}
+/*No elemento podemos colocar so o seletor id=""
+  Podemos colocar somente o seletor class=""
+  Podemos colocar dois seletores class="avancado destaque"
+  Podemos colocar um id e um class*/
+
+/*No mesmo elemento podemos ter dois seletores, um id e um class tipo id="principal" class="destaque".*/
+
+/*Também podemos ter dois seletores class, no mesmo elemento tipo class="avancado destaque"*/
