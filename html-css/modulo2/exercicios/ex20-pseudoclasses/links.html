@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Links</title>
+                    <style>
+                    /* SELETORES PERSONALIZADOS
+                     # = id
+                    . = class
+                    : = pseudo-class
+                    :: = pseudo-element
+                    > = Child
+                    */
+                         body{
+                                        font-family: Arial, Helvetica, sans-serif;
+                         }               
+                         a{ 
+                                        color: red;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                         }
+                         a:visited{ /*Quando o link for visitado vai ficar vermelho escuro.*/
+                                        color: darkred;
+                         }
+                         a:hover{ /*Quando passar o mouse por cima vai ficar sublinhado.*/
+                                        text-decoration: underline;
+                         }
+                         a:active{ /*Quando for clicado vai ficar amarelo.*/
+                                        color: yellow;
+                         }
+                         .especial{
+                                        background-color:rgba(255, 7, 7, 0.5);
+                         }
+                         /*Todos acima são pseudo-classes :, estados de elementos. */
+
+                         /*Abaixo são pseudo-elementos que no caso e com ::*/
+                         .especial::before{/*antes*/
+                                        content: '⇒ ';
+                         }
+                         .especial::after{ /*Depois.*/
+                                        content: ' ⇐'; /*content é conteúdo.*/
+                         }
+                    </style>
+</head>
+<body>
+       <h1>Personalizando Links</h1>
+       <ul>
+                    <li><a href="https://github.com/joaovictoralianca" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCjlpD6WGCeZ2XDIZ7eiMn1A" target="_blank" class="especial">Canal do youtube</a></li>
+                    <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do CursoEmVídeo</a></li>
+       </ul>             
+</body>
+</html>
