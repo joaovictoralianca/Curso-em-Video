@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Teste de Responsividade</title>
+                    <style>
+                          body{
+                             background-color: silver;           
+                          }
+                          main{
+                             background-color: white;
+                             padding: 20px;
+                             border-radius: 10px;
+                             
+                            /* width: 800px; se o tamanho da tela ficar menos q 800px fica  com barra de rolagem*/
+                            min-width: 280px; /* O main ficara responsivo com o minimo de 320px e o máximo de 800px*/
+                            max-width: 800px;
+                            margin: auto; /* Deixa as margens laterais automaticas deixando o main centralizado.*/
+                          }
+
+                          img{
+                            width: 100%; /*Ocupa 100% do main, se diminuir ou aumentar o tamanho a img seguira o main*/
+                          }
+                    </style>
+</head>
+<body>
+     <main>
+          <h1>Testando Responsividade</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nisi optio molestias eveniet error est accusamus quos quidem impedit? Consectetur vero aperiam dignissimos molestias ut, iure deleniti possimus odit? Eveniet reiciendis temporibus minus facere voluptatibus officia veniam aperiam nisi et rerum sapiente, vel recusandae cupiditate doloremque nihil incidunt qui excepturi.</p>
+
+          <picture>
+                    <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"><!--Tela de 600px para baixo, ficará a img (P)-->
+                    <img src="imagens/irina-blok.jpg" alt="Irina Blok"> <!-- Tela de 601px para cima, será essa outra img maior.-->
+          </picture>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nisi optio molestias eveniet error est accusamus quos quidem impedit? Consectetur vero aperiam dignissimos molestias ut, iure deleniti possimus odit? Eveniet reiciendis temporibus minus facere voluptatibus officia veniam aperiam nisi et rerum sapiente, vel recusandae cupiditate doloremque nihil incidunt qui excepturi.</p>
+
+     </main>               
+</body>
+</html>
