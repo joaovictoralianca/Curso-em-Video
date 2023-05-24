@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap'); /* Pegando fonte do google fonte*/
+@font-face { /* Fonte baixada.*/
                     font-family: 'Android';
                     src: url(fontes/idroid.otf) format('opentype');
                     font-weight: normal;
@@ -40,27 +40,51 @@ body {
     font-family: var(--fonte-padrao);
 }
 header{
-    background: var(--cor4);
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor5) );
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 header > h1{   /* Todos os h1 do header*/
     color: white;
     font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 header > p { /* Todos os parágrafos do header*/
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
 }
 nav {
     background-color: var(--cor5);
+    padding: 10px;
 }
 nav > a { /* Todos os links do nav*/
     color: white;
+    padding: 10px;
     text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s; /*Transição do hover de .5 segundos*/
 }
 nav a:hover {
-    text-decoration: underline;
+    background-color: var(--cor3);
+    border-radius: 5px;
 }
 main {
     background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 main h1 { /* Todos os h1 do main*/
     color: var(--cor5);
@@ -68,6 +92,14 @@ main h1 { /* Todos os h1 do main*/
 } 
 main h2 { /* Todos os h2 do main*/
     font-family: var(--fonte-android);
+}
+main img {
+    width: 100%; /* As img do main ficaram flexíveis de acordo com seu tamanho.*/
+}
+main img.pequena {
+    width: 50%;
+    display: block; /* A img não é block e precisamos deixa-la block para poder colocar margin: auto; */
+    margin: auto;
 }
 footer { 
     background-color: var(--cor5);
