@@ -36,28 +36,28 @@
 }
 
 body { 
-    background-color: var(--cor0);
-    font-family: var(--fonte-padrao);
+    background-color: var(--cor0); /*Cor no fundo do body.*/
+    font-family: var(--fonte-padrao); /*Font-family em todo o body.*/
 }
 header{
-    background-image:linear-gradient(to bottom, var(--cor3), var(--cor5) );
-    min-height: 150px;
-    text-align: center;
-    padding-top: 40px;
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor5) ); /*Cor linear-gradinete no fundo do header.*/
+    min-height: 150px; /*Altura minima do header 150px.*/
+    text-align: center; /*Centraliza o texto do header.*/
+    padding-top: 40px; /*Um espaço no top do header entre o conteúdo e a borda.*/
 }
 header > h1{   /* Todos os h1 do header*/
-    color: white;
-    font-family: var(--fonte-destaque);
+    color: white; /*Titúlos h1 do header de cor white.*/
+    font-family: var(--fonte-destaque); /*Font-family do h1 do header.*/
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 header > p { /* Todos os parágrafos do header*/
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    color: white;
-    max-width: 600px;
+    font-family: var(--fonte-padrao); 
+    font-size: 1.2em; 
+    color: white; 
+    max-width: 600px; /*Largura máxima de 600px no parágrafo ele só chegara no máximo a 600px de largura.*/
     padding: 0px 10px 0px 10px;
-    margin: auto;
+    margin: auto; /*As margins laterais igualadas independente do tamanho, deixando centralizado.*/
 }
 nav {
     background-color: var(--cor5);
@@ -84,7 +84,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-
+    
 }
 main h1 { /* Todos os h1 do main*/
     color: var(--cor5);
@@ -92,14 +92,42 @@ main h1 { /* Todos os h1 do main*/
 } 
 main h2 { /* Todos os h2 do main*/
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);/*Linear-gradiente da cor var(--cor01) para trasparent.*/
+    text-indent: 8px; /*Espaço no começo do h2   - A PRIMEIRA VERSÃO*/
+}
+main p{/*O parágrafo de qualquer nível, dentro do main irá mecher em todos os parágrafos não importa se ta dentro de outro elemento.*/
+    margin: 15px 0px;/*Colocando margin-top e margin-bottom de 15px nos parágrafos, para não ficar muito junto dos outros elementos.*/
+    text-align: justify; /*Deixa os paráfrafos justificados.*/
+    text-indent: 30px; /*Deixa um espaço de 30px na primeira linha do parágrafo.*/
+    font-size: 1em; /*Tamnho da font do nosso parágrafo.*/
+    line-height: 2em; /* Altura das linhas, ou o espaço entre as linhas ou seja das linhas do nosso parágrafo.*/
+}
+main strong { /*Palavras com strong, importante.*/
+    color:var(--cor4);
+    font-weight: bold;
+    
+
+}
+main a {
+    text-decoration: none; /*Decoração no texto, none remove qualquer decoração.*/
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
 }
 main img {
     width: 100%; /* As img do main ficaram flexíveis de acordo com seu tamanho.*/
 }
 main img.pequena {
-    width: 50%;
+    max-width: 350px; /* Tamanho máximo de 350px.*/
     display: block; /* A img não é block e precisamos deixa-la block para poder colocar margin: auto; */
-    margin: auto;
+    margin: auto; /* As margins laterais igualadas independente do tamanho.*/
 }
 footer { 
     background-color: var(--cor5);
