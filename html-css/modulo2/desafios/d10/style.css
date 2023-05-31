@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap'); /* Pegando fonte do google fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/* Pegando fonte do google fonte*/
 @font-face { /* Fonte baixada.*/
                     font-family: 'Android';
                     src: url(fontes/idroid.otf) format('opentype');
@@ -27,7 +27,7 @@
     --cor5: #063d1e;
         /* Fontes */
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-destaque:'Bebas Neue', sans-serif;
     --fonte-android: 'Android', cursive;
 }
 * {
@@ -39,6 +39,9 @@ body {
     background-color: var(--cor0); /*Cor no fundo do body.*/
     font-family: var(--fonte-padrao); /*Font-family em todo o body.*/
 }
+a.externo::after { /*Colocando emoji de link depois do conteúdo do links (a) com class="externo".*/
+    content: '\00A0\1F517'; /* \00A0 é um espaço \1F517 é um emoji de link, colocar sempre dentro de aspas. */
+}
 header{
     background-image:linear-gradient(to bottom, var(--cor3), var(--cor5) ); /*Cor linear-gradinete no fundo do header.*/
     min-height: 150px; /*Altura minima do header 150px.*/
@@ -48,6 +51,8 @@ header{
 header > h1{   /* Todos os h1 do header*/
     color: white; /*Titúlos h1 do header de cor white.*/
     font-family: var(--fonte-destaque); /*Font-family do h1 do header.*/
+    font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
@@ -89,6 +94,8 @@ main {
 main h1 { /* Todos os h1 do main*/
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
 } 
 main h2 { /* Todos os h2 do main*/
     font-family: var(--fonte-android);
@@ -129,7 +136,59 @@ main img.pequena {
     display: block; /* A img não é block e precisamos deixa-la block para poder colocar margin: auto; */
     margin: auto; /* As margins laterais igualadas independente do tamanho.*/
 }
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*colcando o h3 nas bordas laterais do aside e seu topo também.*/
+    border-radius: 10px 10px 0px 0px; /*arredondando as bordas top left e top right, as as superiores tem 0px.*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295); /*sombra no h3 do aside.*/
+}
+aside ul {
+    list-style-position: inside; /*inside as bolinhas pro lado de dentro. outside as bolinhas para o lado de fora.*/
+
+    list-style-type: '\2714\00A0\00A0'; /*Colocando o tipo de emoji check ✔️. barra investida mais a numeração do código.*/
+    /* \2714 é o código do check mais a barra investida. \00A0 é um espaço entre o check e a númeração no caso temos dois espaços.*/
+
+    columns: 2; /*Dividindo a lista em duas colunas. Podemos colocar em quants colunas quiser so colocar a quantidade.*/
+}
+aside a { 
+    color: white;
+    background-color: var(--cor3);
+    
+}
 footer { 
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
