@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
+            height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         /* background-attachment: scroll;*/
          /* background-size: 100% 100%; altura e lagura da imagem.*/
-         /* background-size: cover; Faz cortes preeche a tela iteira.*/
          /* background-size: contain; mostra 100% da imagem sem cortar.*/
+
+         /*Short hand
+         color > image > position > repeat > [size]
+         > attachment
+         */
+
+         /* background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+         background-size: cover;
+         
+         */
             
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +43,13 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius minus aperiam, repellendus mollitia esse excepturi? Saepe corrupti laborum possimus illo quas nostrum ea repudiandae ab, iste similique temporibus voluptate fuga sequi, numquam delectus. Doloribus impedit consectetur deleniti. Molestias aliquam rem vel perspiciatis quisquam odio labore earum deleniti molestiae tempore?</p>
     </main>
 </body>
