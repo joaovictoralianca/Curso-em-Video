@@ -11,7 +11,7 @@
         #container{
             
             background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
+            background-size: 100% 100%; /*Largura e Altura do background no caso da imagem*/
             position: relative;
             height: 97vh;/* Viewport = o tamanho da janela do navegador. Se a janela de visualização tiver 50 cm de largura, 1vw = 0,5 cm.
             
@@ -21,14 +21,14 @@
         }
         #conteudo{
             background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
+            background-size: 100% 100%; /*Largura e Altura do background no caso da imagem*/
             position: absolute;
             height: 200px;
             width: 400px;
             background-color: yellow;
             
-            left: 50%;
-            top: 50%;
+            left: 50%; /*usa como referencia o canto superior esquerdo */
+            top: 50%; /*usa como referencia o canto superior esquerdo */
 
             transform: translate(-200px, -100px); /*Transforme: translate; é parecido com o left e o top também pode mover a caixa no eixo X e no eixo Y.
             A translate propriedade permite alterar a posição dos elementos.*/
