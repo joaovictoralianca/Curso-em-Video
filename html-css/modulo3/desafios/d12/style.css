@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+*{  /*TUDO QUE ESTÁ NA TELA DO NAVEGADOR.*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { /*TUDO DENTRO DO HTML E DO BODY OU SEJA TUDO QUE ESTA NA TELA.*/
+    min-height: 100vh; /*Altura minima do html e do body 100vh ou seja vai ocupar toda a tela.*/
+    background-color: darkgrey;
+}
+header{ /*TUDO DENTRO DO HEADER*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{ /*TODO TITÚLO H1 DO HEADER.*/
+    padding-top: 50px;
+    font-variant: small-caps;/*Deixa o início do texto com uma letra maiúscula.*/
+}
+header > p { /*TODOS OS PARÁGRAFOS DENTRO DO HEADER.*/
+    padding-bottom: 50px;
+}
+header a, footer a { /*TODOS OS LINKS DENTRO DO HEADER, E TODOS OS LINKS DENTRO DO FOOTER.*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{ /*UM HOVER NO LINK DO HEADER E UM HOVER NO LINK DO FOOTER.*/
+    text-decoration: underline;
+}
+section{ /*TODAS AS SECTIONS*/
+    padding-top: 10vh; /*10% da altura do vh*/
+    padding-bottom: 10vh; /*10% da altura do vh*/
+    line-height: 2em; /*Um espaço de 2em entre as linhas do texto.*/
+    padding-left: 30px; /*Um  espaço de 30px no lado esquerdo da sections.*/
+}
+section.normal{ /*TODAS AS SECTIONS DE CLASS NORMAL.*/
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+section.imagem{ /*TODAS AS SECTIONS DE CLASS IMAGEM.*/
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+section.imagem > p{ /*TODOS OS PARÁGRAFOS DAS SECTIONS IMAGEM.*/
+    background-color: rgba(0, 0, 0, 0.200);
+    width: 400px;
+}
+footer{ /*TUDO DENTRO DO FOOTER.*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
