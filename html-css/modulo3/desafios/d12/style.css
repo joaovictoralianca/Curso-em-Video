@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{  /*TUDO QUE ESTÁ NA TELA DO NAVEGADOR.*/
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body { /*TUDO DENTRO DO HTML E DO BODY OU SEJA TUDO QUE ESTA NA TELA.*/
     min-height: 100vh; /*Altura minima do html e do body 100vh ou seja vai ocupar toda a tela.*/
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 header{ /*TUDO DENTRO DO HEADER*/
     background-color: black;
@@ -17,6 +28,8 @@ header{ /*TUDO DENTRO DO HEADER*/
 header > h1{ /*TODO TITÚLO H1 DO HEADER.*/
     padding-top: 50px;
     font-variant: small-caps;/*Deixa o início do texto com uma letra maiúscula.*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*A medida baseada na lagura da tela. view width*/
 }
 header > p { /*TODOS OS PARÁGRAFOS DENTRO DO HEADER.*/
     padding-bottom: 50px;
@@ -34,6 +47,9 @@ section{ /*TODAS AS SECTIONS*/
     padding-bottom: 10vh; /*10% da altura do vh*/
     line-height: 2em; /*Um espaço de 2em entre as linhas do texto.*/
     padding-left: 30px; /*Um  espaço de 30px no lado esquerdo da sections.*/
+    font-family: var(--fonte3);
+    font-size: 3vw; /*5% da lagura da tela da tela [view width]*/
+
 }
 section.normal{ /*TODAS AS SECTIONS DE CLASS NORMAL.*/
     background-color: white;
@@ -44,8 +60,9 @@ section.imagem{ /*TODAS AS SECTIONS DE CLASS IMAGEM.*/
     color: white;
 }
 section.imagem > p{ /*TODOS OS PARÁGRAFOS DAS SECTIONS IMAGEM.*/
+    display: inline-block; /*A caixa se adapta ao tamanho do conteúdo.*/
     background-color: rgba(0, 0, 0, 0.200);
-    width: 400px;
+    padding: 10px;
 }
 footer{ /*TUDO DENTRO DO FOOTER.*/
     background-color: black;
