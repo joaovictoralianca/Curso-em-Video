@@ -71,13 +71,13 @@ section.imagem > p{ /*TODOS OS PARÁGRAFOS DAS SECTIONS IMAGEM.*/
     
 }
 section#img01{
-    background-image: url('../imagens/background001.jpg');
+    background-image: url('imagens/background001.jpg');
     background-position: right center;
     background-size: cover; /*Vai cobrir o container inteiro e muda o tamnho de acordo com o tamanho do container, se aumentar e diminuir ele aumenta e diminui.*/
     background-attachment: fixed; /*Deixa a imagem fixada.*/
 }
 section#img02{
-    background-image: url('../imagens/background002.jpg');
+    background-image: url('imagens/background002.jpg');
     background-position: right bottom;
     background-size: cover; /*Vai cobrir o container inteiro e muda o tamnho de acordo com o tamanho do container, se aumentar e diminuir ele aumenta e diminui.*/
     background-attachment: fixed; /*Deixa a imagem fixada.*/
