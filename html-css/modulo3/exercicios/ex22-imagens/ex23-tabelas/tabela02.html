@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{ /* Tabela */
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{  /* Dado e Cabeçalho da tabela, por padrão do navegador o cabeçalho será em negrito */
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: right;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELS GRANDES
+        TABLE  
+            THEAD -> Cabeçalho da tabela
+                TR, TD, TH -> Linha, Dado, e Cabeçalho da tabela
+            TBODY -> Corpo da tabela
+                TR, TD, TH -> Linha, Dado, e Cabeçalho da tabela
+            TFOOT -> Roda pé da tabela
+                TR, TD, TH -> Linha, Dado, e Cabeçalho da tabela
+    -->
+    <table> <!-- Tabela -->
+        <thead> <!-- Cabeçalho -->
+            <tr>  <!-- Linha -->
+                <th>Unidade Federativa</th> <!-- Cabeçalho -->
+                <th>População</th> <!-- Cabeçalho -->
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>  <!-- Linha -->
+                <td>São Paulo</td>  <!-- Dado da tabela-->
+                <td class="num">44 420 459</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Minas Gerais</td>  <!-- Dado da tabela-->
+                <td class="num">20 538 718</td>  <!-- Dado da tabela-->
+
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Rio de Janeiro</td>  <!-- Dado da tabela-->
+                <td class="num">16 054 524</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Bahia</td>  <!-- Dado da tabela-->
+                <td class="num">14 136 417</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Paraná</td>  <!-- Dado da tabela-->
+                <td class="num">11 443 208</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Rio Grande do Sul</td>  <!-- Dado da tabela-->
+                <td class="num">10 880 506</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Pernambuco</td>  <!-- Dado da tabela-->
+                <td class="num">9 058 155</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Ceará</td>  <!-- Dado da tabela-->
+                <td class="num">8 791 688	</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Pará</td> <!-- Dado da tabela-->
+                <td class="num">8 116 132</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Santa Catarina</td> <!-- Dado da tabela-->
+                <td class="num">7 609 601</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Goiás</td>  <!-- Dado da tabela-->
+                <td class="num">7 055 228</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Maranhão</td>  <!-- Dado da tabela-->
+                <td class="num">6 775 152</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->  
+                <td>Paraíba</td> <!--Dado da tabela-->
+                <td class="num">3 974 495</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td> Amazonas</td>  <!-- Dado da tabela-->
+                <td class="num">3 941 175	</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Espírito Santo</td> <!-- Dado da tabela-->
+                <td class="num">3 833 486	</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Mato Grosso</td> <!-- Dado da tabela-->
+                <td class="num">3 658 813</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Rio Grande do Norte</td> <!-- Dado da tabela-->
+                <td class="num">3 302 406</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Piauí</td> <!-- Dado da tabela-->
+                <td class="num">3 269 200</td> <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Alagoas</td>  <!-- Dado da tabela-->
+                <td class="num">3 127 511</td>  <!-- Dado da tabela-->
+            </tr>  
+            <tr>  <!-- Linha -->
+                <td>Distrito Federal</td>  <!-- Dado da tabela-->
+                <td class="num">2 817 068</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Mato Grosso do Sul</td>  <!-- Dado da tabela-->
+                <td class="num">2 756 700</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr> <!-- Linha -->
+                <td>Sergipe</td>  <!-- Dado da tabela-->
+                <td class="num">2 209 558	</td>  <!-- Dado da tabela-->
+            </tr>  <!-- Linha -->
+            <tr>  <!-- Linha -->  <!-- Dado da tabela-->
+                <td>Rondônia</td>  <!-- Dado da tabela-->
+                <td class="num">1 581 016</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr> <!-- Linha -->
+                <td>Tocantins</td>  <!-- Dado da tabela-->
+                <td class="num">1 511 459</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Acre</td>  <!-- Dado da tabela-->
+                <td class="num">830 026</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Amapá</td>  <!-- Dado da tabela-->
+                <td class="num">733 508</td>  <!-- Dado da tabela-->
+            </tr>
+            <tr>  <!-- Linha -->
+                <td>Roraima</td>  <!-- Dado da tabela-->
+                <td class="num">636 303</td>  <!-- Dado da tabela-->
+            </tr>
+        </tbody>
+
+        <tfoot>
+             <tr>  <!-- Linha -->
+                <th>Total de Habitantes</th> <!-- Cabeçalho da tabela-->
+                <td class="num"><strong>290 145 126</strong></td> <!-- Dado da tabela-->
+             </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
