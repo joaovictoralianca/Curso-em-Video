@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{   /* Tabela */
+            width: 400px; /* Largura da tabela */
+            height: 400px; /* Altura da tabela */
+            
+
+            border-collapse: collapse;  /* As bordas das linha ou tr colam uma na outra.*/
+        /*  border-collapse: separate;  /* As bordas das linhas(tr) ficam separadas, é o valor paddão.*/
+            
+        }
+    
+        td{  /* Todos os dados da tabela */
+            border: 1px solid black;   /* Borda dos dados da tabela. */
+            padding: 8px;  /* Espaço entre o conteúdo e a borda do dado da tabela. */
+            text-align: left; /* Alinhamento horizontal. */
+            vertical-align: top; /* Alinhamento vertical. top, middle e bottom (middle é meio ou centro). */
+        }
+        .numero{ /* Alinhando a esquerda os dados que tiverem a class="numero". */
+            text-align: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
+    <table> <!-- Tabela -->
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td class="numero">C1</td>
+        </tr>
+                                               <!-- As tags de fechamento /td e /tr não são obrigatorias. -->
+        <tr> <!-- Segunda linha -->
+             <td>A2</td>
+             <td>B2</td>
+             <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td >B4</td>
+            <td class="numero">C4</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
