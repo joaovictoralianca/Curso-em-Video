@@ -11,6 +11,7 @@
         table{ /* Tabela */
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{  /* Dado e Cabeçalho da tabela, por padrão do navegador o cabeçalho será em negrito */
             border: 1px solid black;
@@ -25,6 +26,11 @@
         thead, tfoot{
             background-color: #383838;
             color: white;
+        }
+        thead > tr > th { /*o th que está no tr que está no thead. não funciona em todos os navegadores.*/
+            position: sticky; /* o th do thead Vai grudar ou seja colar.*/
+            top: -1px; /*Ele vai colar na bem na barra superior.*/
+            background-color: #383838; /* Quando ele descer junto da tabela vai ficar com esse background-color.*/
         }
         tbody > tr:nth-child(2n) { 
             /*:nth-child(2n) seleciona um a cada 2 elementos.
@@ -86,8 +92,185 @@
                 <td>Paraná</td>
                 <td class="num">11 443 208</td>  
             </tr>
+            <tr> 
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+    
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
             <tr>  
-           
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>  
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+    
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+        
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+            
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr> 
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            <tr>  
+                <td>Minas Gerais</td> 
+                <td class="num">20 538 718</td>
+
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td> 
+                <td class="num">16 054 524</td>  
+            </tr>
+            <tr>  
+                <td>Bahia</td> 
+                <td class="num">14 136 417</td>  
+            </tr>
+            <tr>  
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>  
+            </tr>
+            <tr>  
+                <tr>  
+                    <td>Minas Gerais</td> 
+                    <td class="num">20 538 718</td>
+    
+                </tr>
+                <tr> 
+                    <td>Rio de Janeiro</td> 
+                    <td class="num">16 054 524</td>  
+                </tr>
+                <tr>  
+                    <td>Bahia</td> 
+                    <td class="num">14 136 417</td>  
+                </tr>
+                <tr>  
+                    <td>Paraná</td>
+                    <td class="num">11 443 208</td>  
+                </tr>
+                <tr>  
+               
+             
+                               
+                          
         </tbody>
 
         <tfoot> <!--Roda pé da tabela.-->
@@ -98,5 +281,26 @@
              </tr>
         </tfoot>
     </table>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nulla sed saepe iste vitae ut aut maiores, quo possimus soluta. Consequuntur rerum delectus modi quae, ab cumque quo dolor eaque, ipsum optio hic assumenda natus, doloribus maiores libero maxime inventore rem suscipit. Quos omnis sint labore repellat animi sapiente, a quod reprehenderit aliquam quidem nostrum molestiae, provident tempora fuga, reiciendis error commodi laudantium earum eligendi illo vero nulla. Veniam ad officia quia earum? Cumque maiores ratione magni eligendi, quasi, nobis obcaecati laudantium at quidem fuga dolorum aliquam laboriosam impedit consectetur laborum esse enim blanditiis iure facere ad? Maxime, fugiat voluptatum. In cumque dicta nulla eveniet cupiditate? Nisi ducimus nobis dolorum sequi consectetur molestiae, maiores atque necessitatibus? Voluptate totam, earum sit ipsam excepturi corporis impedit esse corrupti cupiditate temporibus recusandae fuga iste qui natus commodi beatae accusamus autem quibusdam perferendis et ratione aspernatur maxime, repellat alias? Tempora aliquid eum laudantium sint eveniet iusto nesciunt? Quae omnis veniam distinctio adipisci amet quia ad quam quis vero consequuntur unde, fugiat in ullam, qui officiis quasi ipsam atque nam officia soluta doloribus. Est omnis debitis assumenda cumque aut? Id ea eius dolore enim maiores possimus iste cupiditate, sunt pariatur fuga sequi, officiis voluptas recusandae?</p>
+    
 </body>
 </html>
